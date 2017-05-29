@@ -65,5 +65,8 @@
 <strong>Form status:</strong>
 <pre>{{ heroForm.status | json }}</pre>
 
+<h4>Name change log</h4>
+<div *ngFor="let name of nameChangeLog">{{name}}</div>
+
 <p><strong>Name value</strong> {{ heroForm.get('name').value }}</p>
 <p><strong>Street value:</strong> {{ heroForm.get('address.street')?.value}}</p>
